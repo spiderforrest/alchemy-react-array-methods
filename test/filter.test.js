@@ -19,6 +19,6 @@ test('filterYoungDogs returns dogs that are less than 2 years old', () => {
   ]);
 });
 
-test.skip('getYoungDogNames returns names of dogs that are less than 2 years old', () => {
+test('getYoungDogNames returns names of dogs that are less than 2 years old', () => {
   expect(getYoungDogNames(dogs)).toStrictEqual(['Spot', 'Rover']);
 });
