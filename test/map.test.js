@@ -2,7 +2,7 @@ import { brands, countries, dogs } from '../data';
 import { getBrands, getCountryCodes, getCountryNames } from '../map';
 import { getAverageAge } from '../reduce';
 
-test.skip('getCountryNames should return the country names', () => {
+test('getCountryNames should return the country names', () => {
   expect(getCountryNames(countries)).toStrictEqual([
     'Ecuador',
     'Lesotho',
@@ -34,7 +34,7 @@ test.skip('getCountryNames should return the country names', () => {
   ]);
 });
 
-test.skip('getCountryCodes return a nested array of countries and their codes', () => {
+test('getCountryCodes return a nested array of countries and their codes', () => {
   expect(getCountryCodes(countries)).toStrictEqual([
     ['Ecuador', 'EC'],
     ['Lesotho', 'LS'],
@@ -66,6 +66,6 @@ test.skip('getCountryCodes return a nested array of countries and their codes', 
   ]);
 });
 
-test.skip('getBrands should return the list of brands', () => {
+test('getBrands should return the list of brands', () => {
   expect(getBrands(brands)).toStrictEqual(['Nike', 'Puma', 'Adidas']);
 });
